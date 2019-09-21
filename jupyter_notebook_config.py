@@ -82,7 +82,7 @@
 c.NotebookApp.allow_remote_access = True
 
 ## Whether to allow the user to run the notebook as root.
-#c.NotebookApp.allow_root = False
+c.NotebookApp.allow_root = True
 
 ## DEPRECATED use base_url
 #c.NotebookApp.base_project_url = '/'
@@ -201,7 +201,7 @@ c.NotebookApp.allow_remote_access = True
 #c.NotebookApp.iopub_msg_rate_limit = 1000
 
 ## The IP address the notebook server will listen on.
-c.NotebookApp.ip = '*'
+c.NotebookApp.ip = '0.0.0.0'
 
 ## Supply extra arguments that will be passed to Jinja environment.
 #c.NotebookApp.jinja_environment_options = {}

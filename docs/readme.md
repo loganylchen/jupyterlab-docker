@@ -4,8 +4,7 @@
 
 ```shell script
 docker run --rm -it -p 8888:9000 \
-    -v `pwd`:/lab/works btrspg/jupyterlab:1.0.0 \
-    bash -c 'jupyter lab --ip 0.0.0.0 --allow-root'
+    -v `pwd`:/lab/works btrspg/jupyterlab:1.0.0 
 ```
 来启动服务。
 
@@ -52,8 +51,7 @@ RUN conda install -r anaconda bioconductor-deseq2
 docker build -t <user>/<name> .
 
 docker run --rm -it -p 8888:9000 \
-    -v `pwd`:/lab/works <user>/<name> \
-    bash -c 'jupyter lab --ip 0.0.0.0 --allow-root'
+    -v `pwd`:/lab/works <user>/<name> 
 ```
 即可
 
