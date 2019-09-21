@@ -4,7 +4,7 @@
 
 ```shell script
 docker run --rm -it -p 8888:9000 \
-    -v `pwd`:/lab/works btrspg/jupyterlab:1.0.0 
+    -v `pwd`:/lab/works btrspg/jupyterlab:latest
 ```
 来启动服务。
 
