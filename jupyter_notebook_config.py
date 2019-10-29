@@ -82,7 +82,7 @@
 c.NotebookApp.allow_remote_access = True
 
 ## Whether to allow the user to run the notebook as root.
-c.NotebookApp.allow_root = True
+c.NotebookApp.allow_root = False
 
 ## DEPRECATED use base_url
 #c.NotebookApp.base_project_url = '/'
