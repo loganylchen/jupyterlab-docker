@@ -1,6 +1,8 @@
 FROM continuumio/miniconda3
 MAINTAINER Chen Yuelong <yuelong.chen.btr@gmail.com>
 
+RUN apt update \
+    && apt install -y build-essential gcc
 RUN conda install -y  -c conda-forge nodejs jupyterlab julia \
     && conda install -y -c r r \
     && conda install -y -c conda-forge r-irkernel \
