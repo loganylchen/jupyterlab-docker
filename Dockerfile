@@ -1,10 +1,10 @@
 FROM continuumio/miniconda3
 MAINTAINER Chen Yuelong <yuelong.chen.btr@gmail.com>
 
-RUN conda install -y  -c conda-forge  jupyterlab julia \
+RUN conda install -y  -c conda-forge nodejs jupyterlab julia \
     && conda install -y -c r r \
-    && conda install -y -c conda-forge r-irkernel && \
-    jupyter notebook --generate-config
+    && conda install -y -c conda-forge r-irkernel \
+    && jupyter notebook --generate-config
 
 WORKDIR /tmp
 COPY installIJulia.jl jupyter_notebook_config.py ./
